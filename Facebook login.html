@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="fonts/css/all.css" type="text/css" media="all" />
+        <title>facebook login</title>
+        <style type="text/css" media="all">
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+     header{ 
+                width: 100%;
+                height: 30px;
+                background-color: #E4D68C;
+                text-align: center;
+            }
+            h5{
+                font-size: 13px;
+                color: #377FD4;
+                text-align: center;
+            }
+            h3{
+                text-align: center;
+                color: #3675FF;
+                margin-top: 20px;
+            }
+            #text{
+                padding: 20px 20px;
+                margin-left: 15px;
+                width: 90%;
+                margin-top: 5%;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                background-color:#DDE1E5;
+            }
+            #password{
+                padding: 20px 20px;
+                margin-left: 15px;
+                width: 90%;
+                margin-top:7px;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                background-color:#DDE1E5;
+            }
+            ::placeholder{
+                color:#717171;
+            }
+            .send{
+                padding: 10px 15px;
+                margin-left: 15px;
+                width: 90%;
+                margin-top:15px;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                background-color:#3555E0;
+                color: white;
+                font-size: 17px;
+            }
+            #action{
+                color: white;
+                font-size: 10px;
+                margin-left: 10px;
+                display: none;
+                z-index: 1;
+            }
+            .cover-action{
+                position:relative;
+                top: 0%;
+                left: 0%;
+                bottom: 0%;
+                height: 20px;
+                background-color:#D92800;
+                display: none;
+            }
+            i{
+                font-size: 20px;
+            }
+            .fa-x{
+                font-size: 10px;
+                margin-left: 10%;
+                margin-top: 2px;
+                background-color: #000000;
+            }
+            a{
+                text-decoration-color: none;
+            }
+            .link{
+                text-align: center;
+                text-decoration: none;
+                margin-top: 20px;
+                color: #0B68C3;
+            }
+            .new{
+                padding: 10px 20px;
+                margin-left: 14%;
+                width: 70%;
+                margin-top: 30px;
+                border:2px solid black;
+                outline: none;
+                background-color: inherit;
+                border-radius: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h5>Get facebook for android and browse Faster.</h5>
+        </header>
+        <i style="margin-left:40%;; color:blue; font-size:40px;" class="fab fa-facebook"></i>
+        <h3>facebook</h3>
+
+                   <form class="in" action="" method="get" accept-charset="utf-8">
+                        <div class="container">
+      <div class="input-style">
+         <input oninput="signal()" placeholder="mobile number or email address " type="text" name="text" id="text" value="" required/>
+         <div class="cover-action" id="action" onclick="go()">
+                      <span>Enter valid number or Email address</span><i class="fas fa-x"></i>
+         </div>
+
+         <input oninput="signal()" placeholder="password" type="password" name="password" id="password" value="" required/>
+                   <button class="send">Log In</button>  
+                   </form>
+      </div> 
+      <div class="links">
+<a class="forgotten"><p class="link">
+    Forgotten password?
+</p></a>
+<p style="text-align:center; margin-top:20px;">or</p>
+<button type="disabled" class="new">create new account</button>
+      </div>
+   </div>
+   <script type="text/javascript">
+       function go(){
+           document.getElementById('action').style.display = 'none'; 
+       }
+              function signal(){
+    var  input = document.getElementById('text');
+document.getElementById('action').style.display = 'block'; 
+       }
+   </script>
+    </body>
+</html>
